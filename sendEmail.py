@@ -6,11 +6,11 @@ from time import sleep
 file=open("message.txt", "r")
 message_body = file.read()
 
-email = input("Your email: ")　#邮箱账户
+email = input("Your email: ") #邮箱账户
 password = input("You password: ") #邮箱密码
 user_name = input("What is your name(first_name + last_name): ") #邮件结尾最后的名字
 
-smtpserver = smtplib.SMTP("smtp.gmail.com", 587)　# Gmail的服务器登录
+smtpserver = smtplib.SMTP("smtp.gmail.com", 587) # Gmail的服务器登录
 smtpserver.ehlo()
 smtpserver.starttls()
 smtpserver.ehlo()
